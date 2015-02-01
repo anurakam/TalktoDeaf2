@@ -1,7 +1,6 @@
 package project.talktodeaf.main;
 
 import android.content.Intent;
-import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
@@ -10,10 +9,6 @@ import android.view.View;
 import android.widget.Toast;
 
 import com.cengalabs.flatui.views.FlatButton;
-
-import project.talktodeaf.Model.Example;
-import project.talktodeaf.Rest.ApiService;
-import retrofit.RestAdapter;
 
 
 public class MainActivity extends ActionBarActivity {
@@ -58,32 +53,10 @@ public class MainActivity extends ActionBarActivity {
                 startActivity(info);
             }
         });
-        new HttpAsyncTask().execute();
+
     }
-    public class HttpAsyncTask extends AsyncTask<Void, Void, Example> {
-        @Override
-        protected Example doInBackground(Void... params) {
 
-            RestAdapter restAdapter = new RestAdapter.Builder()
-                    .setLogLevel(RestAdapter.LogLevel.FULL)
-                    .setEndpoint("http://192.168.46.1:80")
-                    .build();
 
-            ApiService retrofit = restAdapter.create(ApiService.class);
-            Example example = retrofit.getExample();
-
-            return example;
-        }
-
-        @Override
-        protected void onPostExecute(Example example) {
-
-            Toast.makeText(getApplicationContext(),
-                    "Name : " + example.getName_voc() + " URL : " + example.getDes_voc(),
-                    Toast.LENGTH_LONG).show();
-            super.onPostExecute(example);
-        }
-    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {

@@ -1,14 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="project.talktodeaf.main" >
+
     <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
-            android:name=".MainActivity"
+            android:name="project.talktodeaf.main.MainActivity"
             android:label="@string/app_name" >
         </activity>
         <activity
@@ -22,44 +24,32 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".ActivityGame"
+            android:name="project.talktodeaf.main.ActivityGame"
             android:label="@string/app_name" >
         </activity>
         <activity
-            android:name=".ActivityWordGame"
+            android:name="project.talktodeaf.main.ActivityWordGame"
             android:label="@string/title_activity_activity_word_game" >
         </activity>
         <activity
-            android:name=".ActivityVideoGame"
+            android:name="project.talktodeaf.main.ActivityVideoGame"
             android:label="@string/title_activity_activity_video_game" >
         </activity>
         <activity
-            android:name="project.talktodeaf.ui.SmartFragmentStatePagerAdapter"
-            android:label="@string/title_activity_smart_fragment_state_pager_adapter" >
+            android:name="project.talktodeaf.main.ActivityInformation"
+            android:label="@string/title_activity_information" >
         </activity>
         <activity
-            android:name="project.talktodeaf.wordgame.GameWordFirstFragment"
-            android:label="@string/title_activity_first_fragment" >
+            android:name="project.talktodeaf.Information.Information"
+            android:label="@string/title_activity_information" >
         </activity>
         <activity
-            android:name="project.talktodeaf.wordgame.GameWordSecondFragment"
-            android:label="@string/title_activity_second_fragment" >
+            android:name="project.talktodeaf.Information.BookInfo"
+            android:label="@string/title_activity_book_info" >
         </activity>
         <activity
-            android:name=".ThreeFragment"
-            android:label="@string/title_activity_three_fragment" >
-        </activity>
-        <activity
-            android:name="project.talktodeaf.videogame.GameVideoFirstFragment"
-            android:label="@string/title_activity_game_video_first_fragment" >
-        </activity>
-        <activity
-            android:name="project.talktodeaf.videogame.GameVideoSecondFragment"
-            android:label="@string/title_activity_game_video_second_fragment" >
-        </activity>
-        <activity
-            android:name="project.talktodeaf.videogame.GameVideoThirdFragment"
-            android:label="@string/title_activity_game_video_third_fragment" >
+            android:name="project.talktodeaf.Information.PlaceInfo"
+            android:label="@string/title_activity_place_info" >
         </activity>
     </application>
 

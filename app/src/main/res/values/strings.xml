@@ -14,5 +14,8 @@
     <string name="title_activity_game_video_first_fragment">GameVideoFirstFragment</string>
     <string name="title_activity_game_video_second_fragment">GameVideoSecondFragment</string>
     <string name="title_activity_game_video_third_fragment">GameVideoThirdFragment</string>
+    <string name="title_activity_information">Information</string>
+    <string name="title_activity_book_info">BookInfo</string>
+    <string name="title_activity_place_info">PlaceInfo</string>
 
 </resources>
